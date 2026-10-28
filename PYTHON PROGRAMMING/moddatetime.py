@@ -1,0 +1,20 @@
+import datetime
+print("Current date and time:",datetime.datetime.now())
+print("Current date:",datetime.date.today())
+d=datetime.date(2026,10,28)
+print("Created date:",d)
+t=datetime.time(10,30,45)
+print("Created time:",t)
+today=datetime.date.today()
+print("Year:",today.year)
+print("Month:",today.month)
+print("Day:",today.day)
+d1=datetime.date(2026,10,28)
+d2=datetime.date(2026,10,20)
+print("Date difference:",d1-d2)
+now=datetime.datetime.now()
+print("Formatted date:",now.strftime("%d-%m-%y"))
+print("Formatted time:",now.strftime("%H:%M:%S"))
+print("Date only:",now.date);
+print("Time Only:",now.time())
+                                     
