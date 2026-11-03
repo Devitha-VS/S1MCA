@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration form</title>
+<style>
+body{
+background-color:white;
+font-family:Arial;
+}
+h1{
+color:darkblue;
+text-align:center;
+}
+h2{
+color:darkblue;
+background-color:pink;
+padding:8px;
+}
+form{
+background-color:white;
+width:700px;
+margin:auto;
+padding:20px;
+border:2px solid darkblue;
+}
+input,select,textarea{
+padding:6px;
+margin-top:5px;
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="password"],input[type="number"],input[type="date"]
+{
+width:250px;
+}
+input[type="submit"],input[type="reset"]
+{
+background-color:darkblue;
+color:white;
+padding:8px 20px;
+border:none;
+cursor:pointer;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover
+{
+background-color:green;
+}
+textarea
+{
+border:1px solid gray;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 120px;
+}
+
+</style>
+</head>
+<body align="left">
+<h1 align=center">STUDENT REGISTRATION FORM</h1>
+<form>
+<h2>personal information</h2>
+<div class="form-row">
+    <label>Student Name:</label>
+    <input type="text" name="studentname">
+</div>
+
+<div class="form-row">
+    <label>Roll number:</label>
+    <input type="text" name="rollno">
+</div>
+
+<div class="form-row">
+    <label>Date of Birth:</label>
+    <input type="date" name="dob">
+</div>
+
+Gender:<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="other">Other<br><br>
+<h2>Contact Details</h2>
+<div class="form-row">
+<label>Email:</label>
+<input type="email" name="email">
+</div>
+<div class="form-row">
+<label>Phone no:</label>
+<input type="tel" name="phone">
+</div>
+Address:<br>
+<textarea name="address" rows="4" cols="40"></textarea><br>
+<h2>Academic Qualification</h2>
+Qualification:<select name="qualification">
+<option>---select qualification--</option>
+<option>plustwo</option>
+<option>Degree</opion>
+<option>Diploma</option>
+<option>other</option>
+</select><br>
+percentage:<input type="number" name="percentage"><br>
+<h2>Course Selection</h2>
+select course:
+<select name="course">
+Moption---select copurse--</option>
+<option>BCA</option>
+<option>MCA</option>
+<option>B.Tech</option>
+<option>M.Tech</option>
+<option>BBA</option>
+</select><br>
+<h2>Account Details</h2>
+password:<input type="password" name="password"><br>
+upload Certificate:<input type="file" name="certificate"><br>
+Date of Transfer certificate:<input type="data"name="tcdata"><br><br>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="Reset">
+</center>
+</form>
+</body>
+</html>
