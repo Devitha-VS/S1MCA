@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Striped Table using css</title>
+<style>
+#studentTable{
+width:70%
+font-family:arial,sans-serif;
+border-collapse:collapse;
+}
+#studentTable th{
+padding:10px;
+text-align:left;
+background-color:lightblue;
+border:1px solid black;
+}
+#studentTable td{
+padding:10px;
+border:1px solid black;
+}
+#studentTable tr{
+border:1px solid black;
+}
+#studentTable tr:hover{
+background-color:lightgreen;
+}
+#studentTable tr:nth-child(odd)
+{
+background-color:lightgray;
+}
+</style>
+</head>
+<body>
+<h2>STRIPED TABLE USING CSS</h2>
+<table id="studentTable">
+<tr>
+<th>Roll No</th>
+<th>Name</th>
+<th>Course</th>
+<th>Mark</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Anu</td>
+<td>MCA</td>
+<td>85</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Amal</td>
+<td>MCA</td>
+<td>90</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Meera</td>
+<td>MCA</td>
+<td>78</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Arun</td>
+<td>MCA</td>
+<td>88</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Neha</td>
+<td>MCA</td>
+<td>92</td>
+</tr>
+</table>
+</body>
+</html>
